@@ -21,20 +21,13 @@ public class InterpretDrawingFile {
 		File f = new File(chooser.getSelectedFile().getPath());
 		Scanner in = new Scanner(f); //making Scanner with a File
 		
-		System.out.print("Enter x:");
 		double x = in.nextDouble();
-		
-		System.out.print("Enter y:");
 		double y = in.nextDouble();
-		
-		System.out.print("Enter halfWidth:");
 		double halfWidth = in.nextDouble();
-		
-		System.out.print("Enter halfHeight:");
 		double halfHeight = in.nextDouble();
 		
 		Color purply = new Color(255, 0, 150);
 		StdDraw.setPenColor(purply);
-		StdDraw.filledRectangle(.75, .75, .1, .1);
+		StdDraw.filledRectangle(x,y,halfWidth,halfHeight);
 	}
 }

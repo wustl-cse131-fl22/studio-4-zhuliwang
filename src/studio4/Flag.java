@@ -20,5 +20,7 @@ public class Flag {
 		StdDraw.setPenColor(Color.GREEN);
 		StdDraw.filledCircle(0.2,0.2,0.15);
 		
+	 
+		
 	}
 }
